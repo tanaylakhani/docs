@@ -1,0 +1,119 @@
+---
+title: Version 2.0.1 - June 20, 2024
+description: 'This release focuses on enhancing user experience with new features, improving application performance,
+and fixing several bugs reported by our users. This has been the biggest update to the new Stacks dashboard so far,
+making it more stable, performant and more widely adaptable.'
+---
+
+- [User interface overhaul](#user-interface-overhaul)
+- [Command palette actions](#command-palette-actions)
+- [Right sidebar updates](#right-sidebar-updates)
+- [Collapse the main sidebar](#collapse-the-main-sidebar)
+- [Right click on things](#right-click-on-things)
+- [Features](#features)
+- [Changes](#changes)
+- [Full changelog](#full-changelog)
+- [Bug fixes](#bug-fixes)
+- [Known issues](#known-issues)
+
+<br/>
+
+### User interface overhaul
+
+Upon receiving valuable feedbacks, it was clear that the previous implementation of the UI design for the dashboard was lacking on some important necessities. In the dark mode, the blue-ish gradient effect made readability a bit of a challenge whereas inconsistencies in the design of elements were quite apparent to look at.
+
+This update brings a massive overhaul to the user interface of the dashboard. Unnecessary flairs from the design which were previously distracting to the eyes are removed in favour of a more minimalistic approach. The overall contrast and colour profile in both the light and dark mode has been changed making the dashboard much more delightful to use.
+
+<br/>
+
+### Command palette actions
+
+Previously the command palette (accessible using <kbd>⌘K</kbd> shortcut) worked merely as a search tool to quickly search for links and collections. With the new update, it is a much more integral part of your daily activities on Stacks. You can quickly perform various actions ranging from creating links, collections, managing them, switching between workspaces or even change your preferred theme to light to dark. Just press <kbd>⌘K</kbd> to get started.
+
+<br/>
+
+### Right sidebar updates
+
+Just like the command palette, the right sidebar too is now much more meaningful in your daily activities. For starters, we now have right sidebars for almost every pages. [Collections](https://app.betterstacks.com/collections), [My Account](https://app.betterstacks.com/account), Smart collections and [Import](https://app.betterstacks.com/import) are some of the pages where we did not have a right sidebars previously which we do now.
+
+In the sidebar in the [Dashboard](https://app.betterstacks.com/) page you can access all your quick links in a nice list view with options to delete or edit those quick links individually to be added soon. In the sidebar in a individual collection page, you can see all the people who have access to the links in that collections in the Collaborators section of the sidebar. This feature is perfect for quickly looking up to whom your links will be shared if you decide to add them in that collection.
+
+Additional information and actions can also be found in the sidebar for [Collections](https://app.betterstacks.com/collections), [Import](https://app.betterstacks.com/import) and [My Account](https://app.betterstacks.com/account) pages with more options and information to be added later.
+
+<br/>
+
+### Collapse the main sidebar
+
+Yes, the main sidebar is now collapsible as well. Look for the toggle button next to the breadcrumb in the top navigation bar or simply press <kbd>[</kbd> to toggle. You can navigate between pages and all your different collections in the collapsed state as well. Just that you have to identify the pages by their associated emoji. Although the tooltips are there to be of assistance. Just hover your mouse over an icon and more information will pop up.
+
+<br/>
+
+### Right click on things
+
+Context menus are now live. You can right click on any collection or links wherever you see them to open up a menu with more options to manage them. Edit things, delete them, move them, everything is just a right click away. Try right clicking the link cards on the [Dashboard](https://app.betterstacks.com/).
+
+<br/>
+
+### Features
+
+- Quick links are now accessible through the right sidebar in the [Dashboard](https://app.betterstacks.com/)
+- You can now see which page you are on in the left sidebar
+- Context menus are added. To manage a link or collection wherever you see them, just right click on them.
+- There are now right sidebars on the [Collections](https://app.betterstacks.com/collections), Smart Collections, [My Account](https://app.betterstacks.com/account) and [Import](https://app.betterstacks.com/import)pages for additional context and information
+- In a collection page, the right sidebar now shows all those who have access to that collection in the Collaborators section – perfect for quickly seeing with whom your links will be shared
+- Command palette <kbd>⌘K</kbd> has now options to perform every action including managing links, collections, workspaces to update preferences
+- You can collapse or expand the main sidebar as well. Look for the toggle button left to the breadcrumb or simple press <kbd>[</kbd> to toggle
+- You can add new sub-collection easily when on an individual collection page. Look for the <kbd>New sub-collection</kbd> button next to filter and sort options
+
+### Changes
+
+- Page title is no longer shown next to the Filter button, instead the breadcrumb is moved there replacing the title. The former position of breadcrumb is now occupied by a more prominent and easily accessible search functionality
+- The search dialog no longer supports filtering by domains and tags. Use the filtering options in the Dashboard or individual collections page instead. This change was made in the light of the fact that domain and tags filters are now stable in the Dashboard and an expanded advanced search feature is in the works
+
+### Full changelog
+
+- Loading indicator is added for all navigations
+- Hover effects in buttons, sidebar, drop-down and other menus were simplified and made more visually appealing and less animated
+- Changed the overall colour profile of the dashboard in dark mode to increase contrast and readability
+- Removed background aurora effect in dark mode for a cleaner appearance
+- Collaborators were added in the collection right sidebar
+- Made the top navigation bar more compact while maintaining accessibility – that means more space for the actual content
+- Quick links were added to the right sidebar in the dashboard page
+- Indicators were added in the left sidebar to reflect the current page
+- Increased readability and contrast in the multi-select operations window
+- Right sidebar added in Collections, Smart Collections, My Account and Import pages
+- Context menu for collections and links were added
+- Images in link cards and link sidebars are now lazily loaded providing better initial load performance
+- Optimized sidebar and dialog performance by removing duplication of elements
+- Increased performance by memoizing elements
+- Increased page load and navigating performance by effectively caching data on server
+- Improved initial page load performance by leveraging a technique called async promise resolvers
+- Pages are now interactive much quicker than before by eliminating subsequent fetch for infinite scrolling
+- Command palette shows loading indicator in much more visually distinguishable way
+- Added options for managing links, collections, and workspaces as well as changing preferences from the command palette
+- Breadcrumbs are now more compact and visually cohesive
+- Page title removed from the filter and sort section
+- Implemented robust and graceful error handling for page level and action level errors
+- The main sidebar is made collapsible with a toggle button
+- Collections can now be moved inside or outside a different collection
+- Descriptive tooltips are added on the buttons with no descriptions
+
+### Bug fixes
+
+- Fixed an unruly shadow visible below opened dialog boxes
+- Fixed various style inconsistencies throughout the dashboard
+- Fixed a bug with loading screen that would cause the right sidebar to misbehave in some cases
+- Fixed a style issue where while closing the dialog it would animate towards right instead of sliding straight up
+- Fixed an error which may sometime occur while updating the UI after creating a link
+- Fixed a bug where subsequent links that would appear after scroll would not match the selected filters
+- Fixed a bug where all collections and their child collections would show up in the Collections page
+- Fixed a bug where any dialog would sometimes misbehave when opened from the link sidebar
+
+### Known issues
+- **Resizing right sidebar**: Some users may experience issues when trying to resize the right sidebar after a reload.
+A fix is being worked on and will be released soon. Meanwhile if you encounter the issue, the first time it may not
+work, try again without reloading and it will be fine.
+
+<br/>
+
+For any issues or feedback, contact our support team at our [feedback board](https://stacks.canny.io/).
