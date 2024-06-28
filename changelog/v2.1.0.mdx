@@ -1,0 +1,58 @@
+---
+title: Version 2.1.0 - June 28, 2024
+description: 'This particular release focuses on shipping two of the most requested features in Stacks. The highlights
+are pages (like collaborative documents) and API keys to access Stacks account programmatically.'
+---
+
+- [API Keys](#api-keys)
+- [Pages](#pages)
+- [Full changelog](#full-changelog)
+
+<br/>
+
+### API keys
+
+API keys are a way to access your Stacks account programmatically. You can use them to build integrations,
+automate tasks, or even create your own custom workflows. You can create multiple API keys and manage them from the
+settings page. Each API key can be given a name to help you identify them later and a set of permissions defining the
+resources that can be access through the use of that particular key. You can also revoke an API key at any time.
+
+To create or manage your API keys, click on your profile picture in the top right-hand corner of the dashboard and
+select `API Keys`. From there, you can create a new API key, view the existing ones, or revoke them.
+
+<br/>
+
+### Pages
+
+Pages are collaborative documents that you can create and share with your team. You can use them to write notes, draft
+documents, or even create a wiki. You can invite your team members to collaborate on a page, and everyone can see the
+changes in real-time. You can also leave notes on a page to discuss specific sections or ask questions.
+
+Pages were there in the previous (soon to be deprecated) dashboard. We have brought them back with a fresh new look
+and a few improvements. You can create a new page by clicking on the `+` button in the left sidebar next to the `Pages`
+link. Or simply press `P` on your keyboard to create a new page.
+
+<br/>
+
+### Full changelog
+
+- API keys can now be created and managed from the [developer portal](https://app.betterstacks.com/account/developer)
+- Pages are back with a fresh new look and a few improvements
+- Moving and adding collections to workspaces is now possible, right click on the collection or click on the three dots
+next to the collection name and select `Manaage Workspaces`
+- Links now shows the creation data, tags, collections, note and annotations in the list view as well (previously they
+were only showed in the grid view)
+- Along with collaborators, right sidebar for an individual collection shows all the workspaces the collection is shared
+within, along with number of links in that collection and the date it was created
+- Fixed a bug where the right and left arrows in the domain and quick link list at the top of the dashboard were not
+visible in some situations
+- Fixed a bug where tags of a link were not being shown on the sidebar and would automatically get removed when
+interacting with the tags
+- Fixed a bug where tags list in a Link card were not scrollable in some situations
+- Fixed a bug where the text inside Export button in the /export page was not visible in the Light theme
+- Fixed a bug whereupon creating a new collection from collection selector dropdown, the collection was not being
+added to the dropdown even after successful creation
+
+<br/>
+
+For any issues or feedback, contact our support team at our [feedback board](https://stacks.canny.io/).
