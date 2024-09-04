@@ -37,7 +37,8 @@
   "tabs": [
     {
       "name": "API Reference",
-      "url": "api-reference"
+      "url": "api-reference",
+      "openapi": "/api-reference/openapi.json"
     },
     {
       "name": "Change log",
@@ -102,16 +103,49 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Links",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/endpoint/links/list-links",
+        "api-reference/endpoint/links/show-link",
+        "api-reference/endpoint/links/create-link",
+        "api-reference/endpoint/links/update-link",
+        "api-reference/endpoint/links/delete-link"
+      ]
+    },
+    {
+      "group": "Collections",
+      "pages": [
+        "api-reference/endpoint/collections/list-collections",
+        "api-reference/endpoint/collections/show-collection",
+        "api-reference/endpoint/collections/create-collection",
+        "api-reference/endpoint/collections/update-collection",
+        "api-reference/endpoint/collections/delete-collection"
+      ]
+    },
+    {
+      "group": "Files",
+      "pages": [
+        "api-reference/endpoint/files/list-files",
+        "api-reference/endpoint/files/show-file",
+        "api-reference/endpoint/files/create-file",
+        "api-reference/endpoint/files/update-file",
+        "api-reference/endpoint/files/delete-file"
+      ]
+    },
+    {
+      "group": "Pages",
+      "pages": [
+        "api-reference/endpoint/pages/list-user-pages",
+        "api-reference/endpoint/pages/show-user-page",
+        "api-reference/endpoint/pages/create-user-page",
+        "api-reference/endpoint/pages/update-user-page",
+        "api-reference/endpoint/pages/delete-user-page"
       ]
     },
     {
       "group": "",
       "pages": [
+        "changelog/v2.2.0",
         "changelog/v2.1.0",
         "changelog/v2.0.1"
       ]

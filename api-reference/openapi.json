@@ -866,10 +866,10 @@
   },
   "servers": [
     {
-      "url": "http://{defaultHost}",
+      "url": "https://{defaultHost}",
       "variables": {
         "defaultHost": {
-          "default": "localhost:3001"
+          "default": "api.betterstacks.com"
         }
       }
     },
