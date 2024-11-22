@@ -86,14 +86,16 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "How-to",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "how-to/Create-Collection",
+        "how-to/Create-Pages-with-Templates",
+        "how-to/Import-Links-from-CSV",
+        "how-to/Import-Links-from-Browser",
+        "how-to/Add-PDF-Files",
+        "how-to/Set-Reminders",
+        "how-to/Upload-Images-and-Videos",
+        "how-to/Use-Smart-Tags"
       ]
     },
     {
