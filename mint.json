@@ -88,14 +88,17 @@
     {
       "group": "How-to",
       "pages": [
+        "how-to/Add-PDF-Files",
         "how-to/Create-Collection",
         "how-to/Create-Pages-with-Templates",
-        "how-to/Import-Links-from-CSV",
         "how-to/Import-Links-from-Browser",
-        "how-to/Add-PDF-Files",
+        "how-to/Import-Links-from-CSV",
+        "how-to/Make-a-Public-Collection-and-Profile",
         "how-to/Set-Reminders",
         "how-to/Upload-Images-and-Videos",
-        "how-to/Use-Smart-Tags"
+        "how-to/Use-Smart-Tags",
+        "how-to/Use-the-Chat-AI-Feature",
+        "how-to/Use-the-Recall-Feature"
       ]
     },
     {
